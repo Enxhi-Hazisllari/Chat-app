@@ -1,12 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --first-color: #00adef; 
+    --second-color: #046CA4; 
+    --third-color: #DAD9C5;
+    --fourth-color: rgb(175, 175, 175);
+    --white-color: white;
+    --gradient-color: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
+}
+/*======================== REGISTER + LOGIN ==========================*/
+
 .formContaner{
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(135,206,250,0.01) 100%);
+    background: var(--gradient-color);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .formWrapper{
-        background-color: white;
+        background-color: var(--white-color);
         padding: 20px 60px;
         display: flex;
         flex-direction: column;
@@ -21,13 +36,13 @@
         }
 
         .title{
-            color: #00adef;
+            color: var(--first-color);
             font-weight: bold;
             font-size: 24px;
         }
 
         .subtitle{
-            color: #00adef;
+            color: var(--first-color);
             font-size: 12px;
         }
 
@@ -46,15 +61,15 @@
                     padding: 15px;
                     width: 250px;
                     border: none;
-                    border-bottom: 1px solid #00adef;
+                    border-bottom: 1px solid var(--first-color);
                 &::placeholder{
-                    color: rgb(175, 175, 175);
+                    color:var(--fourth-color);
                 }
                 }
 
                 button{
-                    background-color: #00adef;
-                    color: white;
+                    background-color: var(--first-color);
+                    color: var(--white-color);
                     padding: 10px;
                     border-radius: 10px;
                     font-weight: bold;
@@ -67,7 +82,7 @@
                     align-items: center;
                     gap: 10px;
                     font-size: 12px;
-                    color: #00adef;
+                    color: var(--first-color);
                     cursor: pointer;
 
                     img{
@@ -76,10 +91,76 @@
                 }
 
                 p{
-                    color: #00adef;
+                    color: var(--first-color);
                     font-size: 12px;
                     margin-top: 10px;
                 }
 
+    }
+}
+
+/*======================== HOME ==========================*/
+
+.home{
+    background: var(--gradient-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        border: 1px solid var(--white-color);
+        border-radius: 10px;
+        overflow: hidden;
+        width: 65%;
+        height: 80%;
+        display: flex;
+
+/*======================== SIDEBAR ==========================*/
+        .sidebar{
+            flex: 1;
+            background-color: var(--second-color);
+            color: var(--third-color);
+            .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: var(--white-color);
+                height: 8%;
+                padding: 5%;
+                color: var(--second-color);
+
+                .logo{
+                    width: 30px;
+                }
+                .user{
+                    display: flex;
+                    gap: 10px;
+                }
+                .user_image{
+                    background-color: var(--third-color);
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                button{
+                    background-color: var(--second-color);
+                    color: var(--third-color);
+                    font-size: 10px;
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+            }
+
+        }
+        
+/*======================== CHAT ==========================*/
+        .chat{
+            flex: 2;
+            background-color: var(--third-color);
+            color: var(--second-color);
+        }
     }
 }
