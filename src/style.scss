@@ -5,11 +5,9 @@
 }
 :root{
     --first-color: #00adef; 
-    --second-color: #046ca4; 
-    --third-color: #dad9c5;
-    --fourth-color: #afafaf;
-    --five-color: #005e90;
-    --white-color: white;
+    --second-color: #f2f9fb; 
+    --gray-color: #afafaf;
+    --white-color: #ffffffff;
     --gradient-color: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
 }
 /*======================== REGISTER + LOGIN ==========================*/
@@ -64,7 +62,7 @@
                     border: none;
                     border-bottom: 1px solid var(--first-color);
                 &::placeholder{
-                    color:var(--fourth-color);
+                    color:var(--gray-color);
                 }
                 }
 
@@ -121,7 +119,7 @@
         .sidebar{
             flex: 1;
             background-color: var(--second-color);
-            color: var(--third-color);
+            color: var(--first-color);
             .navbar{
                 display: flex;
                 align-items: center;
@@ -129,7 +127,7 @@
                 background-color: var(--white-color);
                 height: 8%;
                 padding: 5%;
-                color: var(--second-color);
+                color: var(--first-color);
 
                 .logo{
                     width: 30px;
@@ -139,25 +137,25 @@
                     gap: 10px;
                 }
                 .user_image{
-                    background-color: var(--third-color);
+                    background-color: var(--white-color);
                     height: 24px;
                     width: 24px;
                     border-radius: 50%;
                     object-fit: cover;
                 }
                 button{
-                    background-color: var(--second-color);
-                    color: var(--third-color);
+                    background-color: var(--first-color);
+                    color: var(--white-color);
                     font-size: 10px;
                     border: none;
                     cursor: pointer;
                     padding: 5px;
+                    border-radius: 10px;
                 }
             }
 /*======================== SEARCH ==========================*/
 
             .search{
-                border-bottom: 1px solid var(--third-color);
 
                 .searchForm{
                     padding: 10px;
@@ -168,12 +166,14 @@
                         box-shadow: none;
                     }
                     input{
-                        background-color: transparent;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color: var(--first-color);
                         border: none;
-                        border-bottom: 1px solid var(--fourth-color) ;
+                        border-bottom: 1px solid var(--first-color) ;
                         color: var(--white-color);
                         &::placeholder{
-                            color: var(--fourth-color);
+                            color: var(--white-color);
                         }
                     }
                 }
@@ -184,11 +184,11 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                color: var(--white-color);
+                color: var(--first-color);
                 cursor: pointer;
 
                 &:hover{
-                    background-color: var(--five-color);
+                    background-color: var(--white-color);
                 }
                 img{
                     width: 50px;
@@ -204,7 +204,7 @@
                     }
                     p{
                         font-size: 14px;
-                        color: var(--fourth-color);
+                        color: var(--gray-color);
                     }
                 }
             }
@@ -214,8 +214,29 @@
 /*======================== CHAT ==========================*/
         .chat{
             flex: 2;
-            background-color: var(--third-color);
-            color: var(--second-color);
+            background-color: var(--white-color);
+            color: var(--first-color);
+
+            .chatInfo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                padding: 10px;
+                background-color: var(--first-color);
+                color: var(--white-color);
+            }
+
+            .chatIcons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    height: 25px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
