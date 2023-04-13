@@ -170,10 +170,10 @@
                     input{
                         background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid var(--third-color) ;
+                        border-bottom: 1px solid var(--fourth-color) ;
                         color: var(--white-color);
                         &::placeholder{
-                            color: var(--third-color);
+                            color: var(--fourth-color);
                         }
                     }
                 }
@@ -195,6 +195,17 @@
                     height: 50px;
                     border-radius: 50%;
                     object-fit: cover;
+                }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: var(--fourth-color);
+                    }
                 }
             }
 
