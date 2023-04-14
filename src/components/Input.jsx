@@ -5,7 +5,7 @@ import Attach from '/image/attach.png';
 const Input = () => {
   return (
     <div className='input'>
-      <input type="text" placeholder='Type something...' />
+      <input type="text" placeholder='Message' />
       <div className="send">
         <img src={Attach} alt="Attach" />
         <input type="file" style={{display:'none'}} id='file' />
