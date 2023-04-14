@@ -237,6 +237,19 @@
                     cursor: pointer;
                 }
             }
+            
+            .messages{
+                background-color: var(--first-color);
+                color: var(--white-color);
+                padding: 10px;
+                height: calc(100% - 100px);
+            }
+
+            .input{
+                height: 50px;
+                background-color: var(--second-color);
+                padding: 10px;
+            }
         }
     }
 }
