@@ -3,14 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$first: #00adef;
+$second: #f2f9fb;
+$gray: #afafaf;
+$white: #ffffffff;
+$gradient: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
+
 :root{
-    --first-color: #00adef; 
-    --second-color: #f2f9fb; 
-    --gray-color: #afafaf;
-    --white-color: #ffffffff;
-    --gradient-color: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
+    --first-color: #{$first}; 
+    --second-color: #{$second}; 
+    --gray-color: #{$gray};
+    --white-color: #{$white};
+    --gradient-color: #{$gradient};
 }
 
+/*======================== RESPONSIVE ==========================*/
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+/*======================== SCROLLBAR ==========================*/
 ::-webkit-scrollbar{
     width: 0.5em;
 }
