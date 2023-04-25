@@ -207,6 +207,7 @@ $gradient: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
                         box-shadow: none;
                     }
                     input{
+                        width: 100%;
                         padding: 10px;
                         border-radius: 10px;
                         background-color: var(--first-color);
