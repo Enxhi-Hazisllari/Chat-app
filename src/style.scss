@@ -129,6 +129,11 @@ $gradient: linear-gradient(0deg, #00adef 0%, rgba(135,206,250,0.01) 100%);
                     color: var(--first-color);
                     font-size: 12px;
                     margin-top: 10px;
+
+                    span{
+                        font-size: 14px;
+                        margin: 3px;
+                    }
                 }
 
     }
